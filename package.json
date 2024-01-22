@@ -1,0 +1,22 @@
+{
+  "name": "apryse-test",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite && npm run move-static",
+    "build": "vite build && npm run move-static",
+    "preview": "vite preview",
+    "move-static": "cp -a ./node_modules/@pdftron/webviewer/public/. ./dist/webviewer"
+  },
+  "dependencies": {
+    "@pdftron/webviewer": "^10.6.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "vite": "^2.9.15"
+  }
+}
